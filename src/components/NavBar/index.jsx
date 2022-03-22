@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import { Link } from "react-router-dom";
 
+import "./style.css";
+
 function handleConverter() {}
 
 export const NavBar = () => (
@@ -13,7 +15,10 @@ export const NavBar = () => (
         <Toolbar>
           <Link
             to="/converter"
-            style={{ textDecoration: "none", color: "white" }}
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
           >
             <Button
               onClick={handleConverter}
@@ -21,6 +26,24 @@ export const NavBar = () => (
               variant="outlined"
             >
               Converter
+            </Button>
+          </Link>
+          <Link to="/kms" style={{ textDecoration: "none", color: "white" }}>
+            <Button
+              onClick={handleConverter}
+              color="inherit"
+              variant="outlined"
+            >
+              KMS
+            </Button>
+          </Link>
+          <Link to="/todo" style={{ textDecoration: "none", color: "white" }}>
+            <Button
+              onClick={handleConverter}
+              color="inherit"
+              variant="outlined"
+            >
+              ToDo
             </Button>
           </Link>
         </Toolbar>

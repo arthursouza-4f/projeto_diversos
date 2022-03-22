@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border-radius: 10px;
+
+  /* Box shadow */
+  -webkit-box-shadow: 5px 5px 15px 5px #94949483;
+  box-shadow: 5px 5px 15px 5px #94949483;
+
+  /* Alinha div */
+  position: absolute;
+  top: 29%;
+  left: 37%;
+  margin-left: -100px;
+}
+
+.itens {
+  margin: 30px;
+}
+
+.maiscula {
+  margin-right: 10px;
+}
+.minuscula {
+  margin-right: 10px;
+}
+.alternado {
+  margin-right: 10px;
+}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavBar from "../../components/NavBar/index";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import "./style.css";
+import "./KMS.css";
 
 function App() {
   const [kmUsed, setkmUsed] = useState(0);
@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="container">
+      <div className="container" style={{ top: "29%", left: "47%" }}>
         <div className="itens">
           <h1>Km/Litro: {result}</h1>
           <h5 id="alerta"></h5>
@@ -46,7 +46,7 @@ function App() {
             helperText="Por favor entre com os Lt/Usados"
             id="kmUsed"
             label="Lt/Usados"
-            onChange={(e) => setkmLitersUse(e.target.value)}
+            onChange={(e) => setkmLitersUse(e.target.value.e)}
           />
           <br></br> <br></br>
           <Button variant="contained" onClick={handleClick}>

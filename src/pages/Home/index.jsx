@@ -1,17 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavBar from "../../components/NavBar/index";
 
 const Conversor = () => {
   return (
     <div>
-      <h1>Página Inicial</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/kms">Sobre</Link>
-          </li>
-        </ul>
-      </nav>
+      <NavBar />
     </div>
   );
 };
